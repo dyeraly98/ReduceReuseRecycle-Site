@@ -1,0 +1,222 @@
+/*Edit values to change element colors*/
+:root
+{
+	/*Box colors*/
+	--box-color: aqua;
+	
+	/*Nav colors*/
+	--main-color: #00e2a6;
+	--hover-color: #ffffff;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+	text-align: center;
+}
+h1, h2
+{
+    font-family: 'Knewave', cursive;
+}
+#imageBox
+{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;	
+	position: relative;
+	z-index: 0;
+}
+.bikeSlide
+{
+	width: 100%;
+}
+.arrow
+{
+	position: absolute;
+	bottom: 0%;	
+	z-index: 1;
+	opacity: 0.75;
+	cursor: pointer;
+	width: 50px;
+}
+.left
+{
+	left: 0%;
+}
+.right
+{
+	right: 0%;
+}
+.circleIMG
+{
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;	
+	width: 300px;
+}
+/*Small layout rules*/
+/*
+@media only screen and (min-width:300px)
+{
+    #wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr 5px;
+        grid-template-rows: repeat(9,50px 5px);
+    }
+    .box
+    {
+        background-color: aqua;
+        grid-column: 1/2;
+    }
+	.navigation
+	{
+        grid-column: 1/4;
+        grid-row: 1/4;		
+	}	
+    .b
+    {
+        grid-row: 5/6;
+    }    
+    .c
+    {
+        grid-row: 7/8;
+    }    
+    .d
+    {
+        grid-row: 9/10;
+    } 
+    .e
+    {
+        grid-row: 11/12;
+    } 
+    .f
+    {
+        grid-row: 13/14;
+    } 
+    .g
+    {
+        grid-row: 15/16;
+    } 
+    .h
+    {
+        grid-row: 17/18;
+    }     
+}*/
+/*Medium layout rules*/
+/*
+@media only screen and (min-width:700px)
+{
+    #wrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr 5px);
+        grid-template-rows: repeat(6,50px 5px);
+    }
+    .box
+    {         
+        background-color: aqua;
+    }
+	.navigation
+	{
+        grid-column: 1/4;
+        grid-row: 1/4;		
+	}	
+    .b
+    {
+        grid-column: 1/4;        
+        grid-row: 5/6;
+    }    
+    .c
+    {
+        grid-column: 1/2;        
+        grid-row: 7/8;
+    }    
+    .d
+    {
+        grid-column: 1/2;          
+        grid-row: 9/10;
+    } 
+    .e
+    {
+        grid-column: 1/2;          
+        grid-row: 11/12;
+    } 
+    .f
+    {
+        grid-column: 3/4;         
+        grid-row: 7/8;
+    } 
+    .g
+    {
+        grid-column: 3/4;         
+        grid-row: 9/10;
+    } 
+    .h
+    {
+        grid-column: 3/4;         
+        grid-row: 11/12;
+    }      
+}*/
+/*Large layout rules*/
+@media only screen and (min-width:1000px)
+{
+    #wrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr 5px);
+        grid-template-rows: repeat(5,auto 5px);
+    }
+    .box
+    {         
+        background-color: var(--box-color);
+    }
+	.navigation
+	{
+        grid-column: 1/6;
+        grid-row: 1/2;
+		background-color: var(--main-color);
+	}	
+    .imageSlide
+    {
+        grid-column: 1/6;        
+        grid-row: 3/4;
+    }    
+    .reduce
+    {
+        grid-column: 1/2;        
+        grid-row: 5/6;
+    }    
+    .reuse
+    {
+        grid-column: 3/4;          
+        grid-row: 5/6;
+    } 
+    .cycle
+    {
+        grid-column: 5/6;          
+        grid-row: 5/6;
+    } 
+    .f
+    {
+        grid-column: 1/2;         
+        grid-row: 7/8;
+    } 
+    .g
+    {
+        grid-column: 3/4;         
+        grid-row: 7/8;
+    } 
+    .h
+    {
+        grid-column: 5/6;         
+        grid-row: 7/8;
+    }
+	.footer
+	{
+		grid-column: 1/6;
+		grid-row: 9/10;
+	}
+}
